@@ -1,0 +1,102 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin: 0;
+	@include rem-fallback(padding,0,0,16);
+}
+h1 {
+	@include rem-fallback(font-size,36);
+	line-height:1.2;
+	@include rem-fallback(padding,0,0,22);
+	
+	font-weight:600;
+
+}
+
+h2{
+	@include rem-fallback(font-size,32);
+	line-height:1.2;
+	@include rem-fallback(padding,0,0,22);
+	font-weight:500;
+
+}
+
+h3{
+	@include rem-fallback(font-size,26);
+	@include rem-fallback(line-height,30);
+	@include rem-fallback(padding,0,0,30);
+	
+}
+
+h4{
+	@include rem-fallback(font-size,22);
+	@include rem-fallback(line-height,28);
+	@include rem-fallback(padding,0,0,19);
+	
+	font-weight: 600;
+
+	@include bp(md-max){
+		@include rem-fallback(padding,0,0,16);
+	}
+
+	@include bp(sm-max){
+		@include rem-fallback(font-size,18);
+		@include rem-fallback(line-height,24);
+		@include rem-fallback(padding,0,0,10);
+	}
+}
+
+h5{
+	@include rem-fallback(font-size,20);
+	@include rem-fallback(line-height,26);
+	@include rem-fallback(padding,0,0,20);
+	
+	font-weight:300; 
+
+	@include bp(md-max) {
+		@include rem-fallback(font-size,18);
+		@include rem-fallback(line-height,28);
+		@include rem-fallback(padding-bottom,15);
+	}
+	@include bp(sm-max) {
+		@include rem-fallback(font-size,16);
+		@include rem-fallback(line-height,26);
+		@include rem-fallback(padding-bottom,15);
+	}
+}
+
+h6{
+	@include rem-fallback(font-size,18);
+	@include rem-fallback(line-height,24);
+	
+	font-weight:600;
+
+	@include bp(sm-max){
+		@include rem-fallback(line-height,24);
+	}
+}
+
+p {
+	@include rem-fallback(font-size,20);
+	@include rem-fallback(font-size,26);
+	@include rem-fallback(margin,0,0,16);
+	
+	font-weight: 300;
+	@include bp(sm-max){
+		@include rem-fallback(font-size,16);
+		@include rem-fallback(line-height,24);
+	}
+
+
+}
+
+i,em{
+	font-style: normal;
+}
+
+a{
+	@include transition(0.3s);
+}

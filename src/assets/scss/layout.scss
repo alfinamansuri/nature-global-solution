@@ -1,0 +1,140 @@
+/* Reset*/
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased; 
+    -moz-font-smoothing: antialiased; 
+    -o-font-smoothing: antialiased;
+}
+body{
+    margin: 0; font-family: 'Poppins', sans-serif; color:$black;
+    @include rem-fallback(font-size,18) ;
+    height:100%;
+    font-weight:400;
+    -webkit-font-smoothing: antialiased; 
+    -moz-font-smoothing: antialiased; 
+    -o-font-smoothing: antialiased;
+    &::-moz-selection{
+        background-color:$blue;
+        color:$white;
+    }
+    &::selection{
+        background-color:$blue;
+        color:$white;
+    }
+}
+
+ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+
+a , button{
+    cursor:pointer;
+    @include transition(all 0.3s);
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        outline:none;
+    }
+}
+
+button{
+    &:hover , &:focus{
+        outline: none;
+    }
+}
+
+input{
+    &:focus{
+        outline:none;
+    }
+}
+
+.wrapper{
+    min-height: 100%;
+    @include rem-fallback(padding-top,100);
+    @include transition(transform 0.3s);
+    @include bp(sm-max){
+        @include rem-fallback(padding-top,85);
+    }
+
+}
+
+
+
+.pull-right{
+    float: right!important;
+}
+
+.hidden-md{
+    @include bp(md-max){
+        display:none !important;
+    }
+}
+
+.visible-md{
+    display:none;
+    @include bp(md-max){
+        display:block !important;
+    }
+}
+
+.primary-btn{
+    background-color:$yellow;
+    transition:0.5s all;
+    min-width:64px;
+    text-align: center;
+    @include rem-fallback(font-size,19);
+    @include rem-fallback(padding,20,45);
+    line-height:1.2;
+    font-weight:700;
+    color:$black;
+    border-radius:50px;
+    z-index:1;
+    text-transform:uppercase;
+    text-decoration:none;
+    border:2px solid transparent;
+    &:hover{
+        background-color:transparent;
+        border-color: $white;
+        color:$white;
+    }
+}
+
+
+/* border-btn */
+
+// .border-btn{
+//     border:1px solid $orange !important;
+//     background-color:transparent !important;
+//     color:$orange !important;
+//     min-width:180px; 
+//     @include rem-fallback(font-size,18);
+//     font-weight:500;
+//     @include rem-fallback(line-height,27);
+  
+//     &:hover{
+//         background-color:$light-orange !important;
+//     }
+//   }
+  
+  
+  
+  
+  /*end*/
+  

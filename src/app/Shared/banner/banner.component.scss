@@ -1,0 +1,74 @@
+@import 'general';
+
+.home-baner{
+    height:100vh;
+    h1{
+        color:$white;
+        text-align: center;
+    }
+    p{
+        color:$white;
+        text-align: center;
+        @include rem-fallback(margin-bottom,30);
+    }
+    .btn-block{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+.custom-slick-slider{
+    height:100%;
+    ::ng-deep.slick-list{
+        height:100%;
+        .slick-track{
+            height:100%;
+            .slick-slide{
+                height:100%;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                .inner-content{
+                    max-width:850px;
+                    width:100%;
+                }
+            }
+        }
+    }
+    .primary-btn{
+        @include rem-fallback(margin-right,20);
+        &:last-child{
+            margin-right:0;
+        }
+    }
+    ::ng-deep.slick-arrow{
+        z-index: 1;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size:contain;
+        background-color:transparent;
+        @include rem-fallback(width,40);
+        @include rem-fallback(height,40);
+    }
+    ::ng-deep.slick-prev{
+        background-image:url('/assets/images/left-arrow.svg');
+        left:30px;
+       
+        &:before{
+            display: none;
+        }
+    }
+    ::ng-deep.slick-next{
+        background-image:url('/assets/images/right-arrow.svg');
+        right:30px;
+        z-index: 1;
+        &:before{
+            display: none;
+        }
+    }
+}
+
+// ::ng-deep.slick-list{
+//     height:100%;
+// }
