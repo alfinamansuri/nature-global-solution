@@ -1,1 +1,31 @@
 @import'general';
+
+
+
+.service-detail-wrap {
+    display: flex;
+    margin: 0 -15px;
+    .detail-block {
+    width: 50%;
+    padding: 0 15px;
+    display: inline-flex;
+    .inner-detail-wrap{
+        padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 0 10px rgba(0,0,0,.04);
+    text-align: center;
+    width: 100%;
+    }
+
+    }
+}
+
+.how-work{
+    li{
+    margin-bottom: 5px;
+    text-align: justify;
+    }
+}
+

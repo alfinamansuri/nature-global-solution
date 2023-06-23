@@ -7,6 +7,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactComponent } from './contact/contact.component';
 import { HowItWorkComponent } from './how-it-work/how-it-work.component';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { HelpPageComponent } from './help-page/help-page.component';
 
 
 
@@ -15,7 +18,10 @@ import { HowItWorkComponent } from './how-it-work/how-it-work.component';
     HomePageComponent,
     AboutPageComponent,
     ContactComponent,
-    HowItWorkComponent
+    HowItWorkComponent,
+    TermsComponent,
+    PrivacyComponent,
+    HelpPageComponent
   ],
   imports: [
     CommonModule,
