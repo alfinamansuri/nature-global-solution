@@ -1,0 +1,16 @@
+@import 'general';
+
+
+
+.two-col-block{
+    &.dec-block{
+        padding-top:0 !important;
+        .block-inner{
+    .content-block{
+        flex:0 0 100%;
+        max-width:100%;
+        padding-left:0;
+    }
+}
+    }
+}

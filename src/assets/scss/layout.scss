@@ -117,24 +117,142 @@ input{
 }
 
 
-/* border-btn */
-
-// .border-btn{
-//     border:1px solid $orange !important;
-//     background-color:transparent !important;
-//     color:$orange !important;
-//     min-width:180px; 
-//     @include rem-fallback(font-size,18);
-//     font-weight:500;
-//     @include rem-fallback(line-height,27);
-  
-//     &:hover{
-//         background-color:$light-orange !important;
-//     }
-//   }
-  
   
   
   
   /*end*/
   
+
+ 
+
+/*  banner */
+
+.banner {
+    @include rem-fallback(height,350);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include rem-fallback(margin-bottom,50);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    h1{
+        text-transform:uppercase;
+    }
+}
+
+
+/*two col block css */
+.two-col-block{
+    @include rem-fallback(padding,80,0);
+    .block-inner{
+        display: flex;
+        justify-content: space-between;
+        .image-col{
+            
+            flex:0 0 50%;
+            max-width:50%;
+            .image-col-inner{
+                border-radius:10px;
+                overflow: hidden;
+            }
+            img{
+                border-radius:10px;
+                transition:0.5s all;
+                width:100%;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.01);
+                }
+            }
+        }
+        .content-block{
+            flex:0 0 50%;
+            max-width:50%;
+        }
+    }
+ul{
+    li{
+        position: relative;
+        @include rem-fallback(padding-left,25);
+        @include rem-fallback(margin-bottom,5);
+        @include rem-fallback(font-size,20);
+        @include rem-fallback(line-height,36);
+        &:before{
+            content: "";
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: #ffca00;
+            display: block;
+            position: absolute;
+            left: 1px;
+            top:12px;
+        }
+        p{
+            margin-bottom:0;
+        }
+    }
+}
+.content-block{
+    @include rem-fallback(padding-left,50);
+}
+}
+
+/*end */
+
+
+/* info section css */
+
+.info-section{
+    @include rem-fallback(padding,70,0);
+    .info-inner{
+        display: flex;
+        justify-content: space-between;
+        .info-detail-block{
+            @include rem-fallback(padding,0,10);
+            flex:0 0 50%;
+            max-width:50%;
+            i{
+                display:inline-block;
+                width:50px;
+                @include rem-fallback(margin-bottom,15);
+                img{
+                    display: inline-block;
+                }
+            }
+            h3{
+                @include rem-fallback(margin-bottom,15);
+                padding-bottom:0;
+            }
+            p{
+                a{
+                    text-decoration:none;
+                    color:$black;
+                    &:hover{
+                        color:$blue;
+                    }
+                }
+            }
+            .inner-detail{
+                border:1px solid $light-blue;
+                background-color: $white;
+                @include rem-fallback(padding,50);
+                text-align: center;
+                height:100%;
+                @include rem-fallback(border-radius,5);
+            }
+
+        }
+    }
+}
+
+
+
+
+
+/* end */
+
+

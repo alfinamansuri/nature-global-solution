@@ -11,6 +11,7 @@ h1 {
 	@include rem-fallback(font-size,36);
 	line-height:1.2;
 	@include rem-fallback(padding,0,0,22);
+	color:$white;
 	
 	font-weight:600;
 
@@ -81,7 +82,7 @@ h6{
 
 p {
 	@include rem-fallback(font-size,20);
-	@include rem-fallback(font-size,26);
+	@include rem-fallback(line-height ,32);
 	@include rem-fallback(margin,0,0,16);
 	
 	font-weight: 300;
