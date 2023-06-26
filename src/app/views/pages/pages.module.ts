@@ -29,6 +29,7 @@ import { HelpPageComponent } from './help-page/help-page.component';
     SharedModule,
   ],
   exports: [
+    CommonModule,
     SharedModule,
     HomePageComponent,
     AboutPageComponent
