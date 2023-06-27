@@ -10,6 +10,7 @@ import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { HelpPageComponent } from './help-page/help-page.component';
+import { MaterialModule } from 'src/app/Shared/material/material.module';
 
 
 
@@ -21,18 +22,21 @@ import { HelpPageComponent } from './help-page/help-page.component';
     HowItWorkComponent,
     TermsComponent,
     PrivacyComponent,
-    HelpPageComponent
+    HelpPageComponent,
+    
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     SharedModule,
+    MaterialModule
   ],
   exports: [
     CommonModule,
     SharedModule,
     HomePageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    MaterialModule
     
   ]
 })

@@ -39,10 +39,88 @@
         </div>
     </div>
 </div>
+<div class="registration-form-block">
 <div class="registration-form">
     <div class="form-group-block">
-        <div class="form-group">
-            
-        </div>
+            <div class="form-group primary-form-control">
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput required>
+                        <mat-error >The name is required.</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-group primary-form-control">
+                        <mat-form-field>
+                                <mat-label>Address</mat-label>
+                                <textarea matInput required></textarea>
+                                <mat-error >The address is required</mat-error>
+                            </mat-form-field>
+                </div>
+                <div class="form-group primary-form-control">
+                    <mat-form-field>
+                        <mat-label>City</mat-label>
+                        <input matInput required>
+                        <mat-error >The city is required.</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-group primary-form-control">
+                        <mat-form-field>
+                                <mat-label>Country</mat-label>
+                                <mat-select>
+                                  <mat-option *ngFor="let country of countrys" [value]="country.value">
+                                        {{country.viewValue}}
+                                      </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                    </div>
+                <div class="form-group primary-form-control">
+                        <mat-form-field>
+                            <mat-label>Phone</mat-label>
+                            <input matInput required>
+                            <mat-error >The phone is required.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group primary-form-control">
+                            <mat-form-field>
+                                <mat-label>Email</mat-label>
+                                <input matInput required>
+                                <mat-error >The email is required.</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group primary-form-control">
+                                <mat-form-field>
+                                    <mat-label>Username</mat-label>
+                                    <input matInput required>
+                                    <mat-error >The username is required.</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group primary-form-control">
+                                    <mat-form-field>
+                                        <mat-label>Password</mat-label>
+                                        <input matInput required>
+                                        <mat-error >The password is required.</mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div class="form-group primary-form-control">
+                                        <mat-form-field>
+                                            <mat-label>Confirm Password</mat-label>
+                                            <input matInput required>
+                                            <mat-error >The confirm password is required.</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                <div class="form-group primary-form-control">
+                    <mat-form-field>
+                        <mat-label>Message</mat-label>
+                        <textarea matInput required></textarea>
+                        <mat-error >The message is required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                        <button type="submit" class="primary-btn black-border"> REGISTER</button>
+                    </div>
+                    <div class="form-group">
+                            <p>Already have an account ? <a href="#" title="LOGIN">Login</a></p>
+                        </div>
     </div>
+</div>
 </div>

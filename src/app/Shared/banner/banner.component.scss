@@ -72,3 +72,35 @@
 // ::ng-deep.slick-list{
 //     height:100%;
 // }
+
+.site-info-wrap{
+    position: relative;
+    .site-info{
+        position: absolute;
+    color: $white;
+    text-align: left;
+    z-index: 2;
+    top: 35px;
+    right: 250px;
+    max-width: 230px;
+    h5{
+        @include rem-fallback(font-size,12);
+        line-height:1.4;
+        @include rem-fallback(margin-bottom,4);
+        font-weight:500;
+        padding:0;
+    }
+    p{
+        @include rem-fallback(font-size,12);
+        line-height:1.4;
+        @include rem-fallback(margin-bottom,4);
+        font-weight:400;
+        text-align: left;
+       
+        a{
+            color:$white;
+            text-decoration:none;
+        }
+    }
+    }
+}

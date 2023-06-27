@@ -22,4 +22,6 @@ import { SharedModule } from 'src/app/Shared/shared.module';
    
   ]
 })
-export class CtnModule { }
+export class CtnModule {
+ 
+}

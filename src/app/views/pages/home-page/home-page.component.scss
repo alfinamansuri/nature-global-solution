@@ -36,8 +36,12 @@
             @include rem-fallback(margin-top,15);
             display:inline-block;
             &:hover{
-                border-color:$black;
                 color:$yellow;
+                &:before{
+                 
+                    border-color:$footer-bg;
+                }
+                
             }
         }
         .service-left{

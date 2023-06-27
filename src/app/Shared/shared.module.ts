@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { MaterialModule } from './material/material.module';
 
 
 @NgModule({
@@ -14,13 +15,15 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   ],
   imports: [
     CommonModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MaterialModule
   ],
   exports: [
     HeaderComponent,
     BannerComponent,
     FooterComponent,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MaterialModule
   ],
  
 })
