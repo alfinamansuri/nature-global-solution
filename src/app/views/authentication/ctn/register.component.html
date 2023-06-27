@@ -52,7 +52,7 @@
                 <div class="form-group primary-form-control">
                         <mat-form-field>
                                 <mat-label>Address</mat-label>
-                                <textarea matInput required></textarea>
+                                <input type="address" matInput required>
                                 <mat-error >The address is required</mat-error>
                             </mat-form-field>
                 </div>
@@ -108,6 +108,7 @@
                                             <mat-error >The confirm password is required.</mat-error>
                                         </mat-form-field>
                                     </div>
+
                 <div class="form-group primary-form-control">
                     <mat-form-field>
                         <mat-label>Message</mat-label>
@@ -115,12 +116,30 @@
                         <mat-error >The message is required</mat-error>
                     </mat-form-field>
                 </div>
+               <div class="form-group primary-form-control has-file-upalod">
+                    <mat-form-field>
+                            <mat-label>Registration Certificate</mat-label>
+                            <input matInput required id="upload-input">
+                            <mat-error >The registration certificate is required.</mat-error>
+                    </mat-form-field>
+                    <div class="upload-wrapper">
+                    <div class="upload-btn">
+                        <span>Upload</span>
+                        <input type="file" class="file-upload" id="upload-file">
+                    </div>
+                    <div class="tooltip">
+                        <i class="tooltip-icon"><img src="assets/images/info.svg"></i>
+                        <p class="tooltip-dec"> Document should be in doc, docx, zip or pdf format. </p>
+                    </div>
+                </div>
+               </div>
+                
                 <div class="form-group">
                         <button type="submit" class="primary-btn black-border"> REGISTER</button>
-                    </div>
-                    <div class="form-group">
-                            <p>Already have an account ? <a href="#" title="LOGIN">Login</a></p>
-                        </div>
+                </div>
+                <div class="form-group">
+                        <p class="account-link">Already have an account ? <a href="#" title="LOGIN">Login</a></p>
+                </div>
     </div>
 </div>
 </div>

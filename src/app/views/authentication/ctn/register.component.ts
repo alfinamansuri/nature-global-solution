@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 interface Country {
   value: string;
   viewValue: string;
@@ -21,4 +22,10 @@ export class RegisterComponent {
     {value: 'country-1', viewValue: 'American Samoa'},
     {value: 'country-2', viewValue: 'Algeria'},
   ];
+
+
+
+
+
+
 }
