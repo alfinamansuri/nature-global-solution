@@ -4,6 +4,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 // import { MatFileUploadModule } from 'angular-material-fileupload';
+import { MatIconModule } from '@angular/material/icon'
 
 
 
@@ -15,6 +16,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatSelectModule,
     // MatFileUploadModule
+    MatIconModule
+
    
 
   ],
@@ -22,6 +25,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    MatIconModule
+  
     // MatFileUploadModule
   ]
 })

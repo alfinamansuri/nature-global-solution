@@ -1,2 +1,74 @@
 <app-header></app-header>
-<h1>mrn login</h1>
+<div class="banner about-banner" style="background-image:url('./assets/images/Shipper-Login-Banner.jpg')">
+    <h1>MRN LOGIN</h1>
+</div>
+<div class="selection-wrapper">
+    <div class="container">
+        <h3>Select Who you are</h3>
+        <div class="custom-radio-block">
+            <div class="radio-container">
+                <input  type="radio" checked="checked" name="radio">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/location.svg" alt="location">
+                        <img src="/assets/images/location-yellow.svg" alt="location" class="checked">
+                    </div>
+                    <div class="title">Importer</div>
+                </div>
+            </div>
+            <div class="radio-container">
+                <input  type="radio" checked="checked" name="radio">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/cargo-ship.svg" alt="location">
+                        <img src="/assets/images/cargo-ship-yellow.svg" alt="location" class="checked">
+                    </div>
+                    <div class="title">Exporter</div>
+                </div>
+            </div>
+            <div class="radio-container">
+                <input  type="radio" checked="checked" name="radio">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/engineer.svg" alt="location">
+                        <img src="/assets/images/engineer-yellow.svg" alt="location" class="checked">
+                    </div>
+                    <div class="title">Forwarder/ Representative</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="registration-form-block">
+<div class="registration-form">
+    <div class="form-group-block">
+            <div class="form-group seconday-form-control">
+                    <mat-form-field>
+                        <input matInput required placeholder="Username">
+                        <mat-error >The name is required.</mat-error>
+                    </mat-form-field>
+                </div>
+             
+                <div class="form-group seconday-form-control password-field">
+                    <mat-form-field>
+                        <input type="password" [type]="hide ? 'password' : 'text'" matInput required placeholder="Password" showHideInput>
+                        <mat-error >The city is required.</mat-error>
+                        <mat-icon class="placeholder" (click)="myFunction()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </mat-form-field>
+                </div>
+               
+                <div class="form-group">
+                    <button type="submit" class="primary-btn black-border"> LOGIN</button>
+                </div>
+                <div class="form-group">
+                    <p><a href="" title="" class="account-link forgot-link" title="Forgot password ?">Forgot password ?</a></p>
+                </div>
+                <div class="form-group">
+                    <p class="account-link">Don't have an account ? <a href="" title="" title="Register now">Register now</a></p>
+                </div>
+    
+
+                
+    </div>
+</div>
+</div>

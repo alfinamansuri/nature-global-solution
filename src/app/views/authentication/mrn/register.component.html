@@ -1,2 +1,150 @@
 <app-header></app-header>
-<h1>mrn register</h1>
+<div class="banner about-banner" style="background-image:url('./assets/images/Shipper-Login-Banner.jpg')">
+    <h1>MRN REGISTRATION</h1>
+</div>
+<div class="selection-wrapper">
+    <div class="container">
+        <h3>Select Who you are</h3>
+        <div class="custom-radio-block">
+            <div class="radio-container">
+                <input  type="radio" checked="checked" name="radio">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/location.svg" alt="location">
+                        <img src="/assets/images/location-yellow.svg" alt="location" class="checked">
+                    </div>
+                    <div class="title">Importer</div>
+                </div>
+            </div>
+            <div class="radio-container">
+                <input  type="radio" checked="checked" name="radio">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/cargo-ship.svg" alt="location">
+                        <img src="/assets/images/cargo-ship-yellow.svg" alt="location" class="checked">
+                    </div>
+                    <div class="title">Exporter</div>
+                </div>
+            </div>
+            <div class="radio-container">
+                <input  type="radio" checked="checked" name="radio">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/engineer.svg" alt="location">
+                        <img src="/assets/images/engineer-yellow.svg" alt="location" class="checked">
+                    </div>
+                    <div class="title">Forwarder/ Representative</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="registration-form-block register-page">
+<div class="registration-form">
+    <div class="form-group-block">
+            <div class="form-group primary-form-control">
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput required>
+                        <mat-error >The name is required.</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-group primary-form-control">
+                        <mat-form-field>
+                                <mat-label>Address</mat-label>
+                                <input type="address" matInput required>
+                                <mat-error >The address is required</mat-error>
+                            </mat-form-field>
+                </div>
+                <div class="form-group primary-form-control">
+                    <mat-form-field>
+                        <mat-label>City</mat-label>
+                        <input matInput required>
+                        <mat-error >The city is required.</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-group primary-form-control">
+                        <mat-form-field>
+                                <mat-label>Country</mat-label>
+                                <mat-select>
+                                  <mat-option *ngFor="let country of countrys" [value]="country.value">
+                                        {{country.viewValue}}
+                                      </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                    </div>
+                <div class="form-group primary-form-control">
+                        <mat-form-field>
+                            <mat-label>Phone</mat-label>
+                            <input matInput required>
+                            <mat-error >The phone is required.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group primary-form-control">
+                            <mat-form-field>
+                                <mat-label>Email</mat-label>
+                                <input matInput required>
+                                <mat-error >The email is required.</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group primary-form-control">
+                                <mat-form-field>
+                                    <mat-label>Username</mat-label>
+                                    <input matInput required>
+                                    <mat-error >The username is required.</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group primary-form-control password-field">
+                                    <mat-form-field>
+                                        <mat-label>Password</mat-label>
+                                        <input matInput required>
+                                        <mat-error >The password is required.</mat-error>
+                                        <mat-icon class="placeholder" (click)="myFunction()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </mat-form-field>
+                                </div>
+                                <div class="form-group primary-form-control password-field">
+                                        <mat-form-field>
+                                            <mat-label>Confirm Password</mat-label>
+                                            <input matInput required>
+                                            <mat-error >The confirm password is required.</mat-error>
+                                            <mat-icon class="placeholder" (click)="myFunction()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
+                                        </mat-form-field>
+                                    </div>
+
+                <div class="form-group primary-form-control">
+                    <mat-form-field>
+                        <mat-label>Message</mat-label>
+                        <textarea matInput required></textarea>
+                        <mat-error >The message is required</mat-error>
+                    </mat-form-field>
+                </div>
+               <div class="form-group primary-form-control has-file-upalod">
+                    <mat-form-field>
+                            <mat-label>Registration Certificate</mat-label>
+                            <input matInput required id="upload-input" id="name_input">
+                            <mat-error >The registration certificate is required.</mat-error>
+                    </mat-form-field>
+                    <div class="upload-wrapper">
+                    <div class="upload-btn">
+                        <span>Upload</span>
+                        <input type="file" id="fileupload" class="file-upload" id="upload-file">
+                    </div>
+                    <div class="tooltip">
+                        <i class="tooltip-icon"><img src="assets/images/info.svg"></i>
+                        <p class="tooltip-dec"> Document should be in doc, docx, zip or pdf format. </p>
+                    </div>
+                </div>
+               </div>
+                
+                <div class="form-group">
+                        <button type="submit" class="primary-btn black-border"> REGISTER</button>
+                </div>
+                <div class="form-group">
+                        <p class="account-link">Already have an account ? <a href="#" title="LOGIN">Login</a></p>
+                </div>
+
+                
+    </div>
+</div>
+</div>

@@ -39,7 +39,7 @@
         </div>
     </div>
 </div>
-<div class="registration-form-block">
+<div class="registration-form-block register-page">
 <div class="registration-form">
     <div class="form-group-block">
             <div class="form-group primary-form-control">
@@ -94,18 +94,22 @@
                                     <mat-error >The username is required.</mat-error>
                                 </mat-form-field>
                             </div>
-                            <div class="form-group primary-form-control">
+                            <div class="form-group primary-form-control password-field">
                                     <mat-form-field>
                                         <mat-label>Password</mat-label>
                                         <input matInput required>
                                         <mat-error >The password is required.</mat-error>
+                                        <mat-icon class="placeholder" (click)="myFunction()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
                                     </mat-form-field>
                                 </div>
-                                <div class="form-group primary-form-control">
+                                <div class="form-group primary-form-control  password-field">
                                         <mat-form-field>
                                             <mat-label>Confirm Password</mat-label>
                                             <input matInput required>
                                             <mat-error >The confirm password is required.</mat-error>
+                                            <mat-icon class="placeholder" (click)="myFunction()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
                                         </mat-form-field>
                                     </div>
 
@@ -119,13 +123,13 @@
                <div class="form-group primary-form-control has-file-upalod">
                     <mat-form-field>
                             <mat-label>Registration Certificate</mat-label>
-                            <input matInput required id="upload-input">
+                            <input type="text" matInput required id="upload-input">
                             <mat-error >The registration certificate is required.</mat-error>
                     </mat-form-field>
                     <div class="upload-wrapper">
                     <div class="upload-btn">
                         <span>Upload</span>
-                        <input type="file" class="file-upload" id="upload-file">
+                        <input type="file" #f_input id="fileupload"  (change)="get_filename(f_input.files)" class="file-upload" id="upload-file">
                     </div>
                     <div class="tooltip">
                         <i class="tooltip-icon"><img src="assets/images/info.svg"></i>
@@ -140,6 +144,8 @@
                 <div class="form-group">
                         <p class="account-link">Already have an account ? <a href="#" title="LOGIN">Login</a></p>
                 </div>
+
+                
     </div>
 </div>
 </div>

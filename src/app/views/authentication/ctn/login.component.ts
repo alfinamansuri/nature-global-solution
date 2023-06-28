@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  hide: boolean = true;
 
+  myFunction() {
+    this.hide = !this.hide;
+  }
 }

@@ -340,7 +340,6 @@ ul{
         .mat-form-field-label-wrapper{
             @include rem-fallback(top,-13);
             @include rem-fallback(padding-top,13);
-
         }
         .mat-form-field-label {
             text-transform: uppercase;
@@ -355,9 +354,6 @@ ul{
         .mat-form-field-required-marker{
             color:$red;
         }
-
-
-
     }
     .mat-mdc-form-field{
         width:100%;
@@ -370,7 +366,6 @@ ul{
         }
     }
     .mat-focused{
-        
         .mdc-line-ripple--active{
             &:before{
             border-bottom-color:$form-text;
@@ -385,8 +380,7 @@ ul{
         text-transform:none;
         color:$form-text;
         }
-      
-    }
+      }
     .mat-mdc-form-field-required-marker{
         @include rem-fallback(font-size,16);
         font-weight:400;
@@ -408,8 +402,6 @@ ul{
         }
     }
     }
-
-
 }
 .mdc-menu-surface.mat-mdc-select-panel{
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
@@ -450,6 +442,73 @@ ul{
         &:hover{
             color:$yellow;
         }
+    }
+}
+/* end */
+
+/* secondary-form-control css */
+
+.seconday-form-control{
+    .mat-mdc-form-field{
+        width:100%;
+    }
+
+    input{
+        @include rem-fallback(padding,12,25);
+
+    border: 1px solid $border;
+    border-radius: 50px;
+    @include rem-fallback(font-size,16);
+    line-height:1.4;
+    font-weight: 600;
+    &:focus{
+        border-color:$yellow;
+    }
+    }
+    .mdc-line-ripple{
+        &:after{
+            display:none;
+        }
+        &:before{
+            display:none;
+        }
+    }
+    .mat-mdc-form-field-infix{
+        padding:0 !important;
+    }
+}
+
+
+
+/* end */
+/* password hide show icon */
+.password-field{
+    position: relative;
+    .mat-icon{
+        position: absolute;
+        top:12px;
+        right:20px;
+    }
+}
+.register-page{
+    .password-field{
+        position: relative;
+        .mat-icon{
+            position: absolute;
+            top:23px;
+            right:10px;
+            font-size: 17px;
+        }
+    }
+}
+
+
+/* end */
+
+.forgot-link{
+    text-decoration:none;
+    &:hover{
+        color:$yellow;
     }
 }
 

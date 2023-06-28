@@ -14,7 +14,15 @@ interface Country {
 })
 
 
+
+
 export class RegisterComponent {
+
+  hide: boolean = true;
+
+  myFunction() {
+    this.hide = !this.hide;
+  }
 
   // selected = '1';
   countrys: Country[] = [
@@ -23,9 +31,35 @@ export class RegisterComponent {
     {value: 'country-2', viewValue: 'Algeria'},
   ];
 
+ 
+
+      get_filename(f_input:any) {
+        var upload_file_name = document.getElementById( 'upload-input' );
+        var file_name = f_input[0].name;
+        upload_file_name!.setAttribute('value',file_name);
+      }
 
 
 
+
+
+
+
+
+
+
+//   var input = document.getElementById( ' fileupload ' );
+//   var upload_file_name = document.getElementById( 'upload-input' );
+
+// input.addEventListener( 'change', showFileName );
+
+// function showFileName( event ) {
+
+//   var file_name = input.files[0].name;
+//   upload_file_name.getAttribute('value') = file_name
+
+
+//   }
 
 
 }
