@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,14 +17,16 @@ import { MaterialModule } from './material/material.module';
   imports: [
     CommonModule,
     SlickCarouselModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
     BannerComponent,
     FooterComponent,
     SlickCarouselModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
  
 })

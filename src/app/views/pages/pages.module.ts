@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { RouterModule} from '@angular/router';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SharedModule } from 'src/app/Shared/shared.module';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -29,15 +29,17 @@ import { MaterialModule } from 'src/app/Shared/material/material.module';
     CommonModule,
     PagesRoutingModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule,
+
   ],
   exports: [
     CommonModule,
     SharedModule,
     HomePageComponent,
     AboutPageComponent,
-    MaterialModule
-    
+    MaterialModule,
+    RouterModule,
   ]
 })
 export class PagesModule { }

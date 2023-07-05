@@ -47,7 +47,6 @@ export class RegisterComponent {
 
 
 
-
 //   var input = document.getElementById( ' fileupload ' );
 //   var upload_file_name = document.getElementById( 'upload-input' );
 
